@@ -17,4 +17,4 @@ if (!fs.existsSync(dist)) {
     fs.mkdirSync(dist);
 }
 fs.writeFileSync(path.join(dist, "main.js"), code, 'utf-8');
-fs.writeFileSync(path.join(dist, "main.js.map"), JSON.stringify(map), 'utf-8');
+fs.writeFileSync(path.join(dist, "main.js.map"), map, 'utf-8');
